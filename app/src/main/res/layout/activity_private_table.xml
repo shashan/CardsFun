@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8.0dip"
+    android:background="@drawable/back" >
+
+    <ImageView
+        android:layout_width="@dimen/normal_90dp"
+        android:layout_height="@dimen/normal_90dp"
+        android:background="@drawable/bakos"
+        android:padding="2.0dip"
+        android:src="@drawable/cassia_1" />
+
+    <TextView
+        android:id="@+id/user_has_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:text="Sender Name"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#ffffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/table_boot_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boot value:"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:id="@+id/req_no_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.0dip"
+        android:singleLine="true"
+        android:text="4 Players"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#ffffffff" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="@dimen/normal_20dp">
+
+        <Button
+            android:id="@+id/canclePrivateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/pack_btn"
+            android:text="cancle"
+            android:minHeight="0.0dip"
+            android:minWidth="0.0dip" />
+
+        <Button
+            android:id="@+id/acceptPrivateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/chaal_btn"
+            android:text="Go to table"
+            android:minHeight="0.0dip"
+            android:minWidth="0.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

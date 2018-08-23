@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@android:style/Theme.Translucent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_view_bg"
+         >
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/normal_25dp" 
+            android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fffb9400"
+             android:textSize="@dimen/normal_25dp" 
+            android:text="Side Show From : " />
+        <TextView
+            android:id="@+id/sideshow_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fffb9400"
+             android:textSize="@dimen/normal_25dp" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/normal_25dp" 
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="SideShow"
+                android:textColor="#fffb9400"
+                android:textSize="@dimen/normal_25dp" 
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/acceptSideshowBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_15dp"
+                android:layout_marginRight="@dimen/normal_15dp"
+                android:background="@drawable/chaal_btn"
+                android:text="Accept" 
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/rejectSideshowBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_15dp"
+                android:layout_marginRight="@dimen/normal_15dp"
+                android:background="@drawable/pack_btn"
+                android:text="reject" 
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@android:style/Theme.Translucent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_view_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/normal_25dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Tip To Dealer"
+                android:textColor="#fffb9400"
+                android:textSize="@dimen/normal_25dp" />
+			<LinearLayout 
+			    android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_15dp"
+                android:layout_marginBottom="@dimen/normal_15dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:weightSum="6">
+                <Button
+            android:id="@+id/singleTip"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/nagative_btn" />
+                <View
+            android:layout_width="0.0dip"
+            android:layout_height="1dip"
+            android:layout_weight="0.5" />
+                <TextView
+            android:id="@+id/tip_amount"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3.0"
+            android:background="@drawable/neutral"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:text="5"
+            android:textSize="@dimen/normal_20dp" />
+                <View
+            android:layout_width="0.0dip"
+            android:layout_height="1dip"
+            android:layout_weight="0.5" />
+                <Button
+            android:id="@+id/doubleTip"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/positive_btn" />
+			   <!--  <Button
+            android:id="@+id/singleAmount"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/nagative_btn" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:id="@+id/target_amount"
+            android:layout_width="0.0dip"
+            android:layout_height="m"
+            android:layout_weight="3.0"
+            android:background="@drawable/neutral"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/normal_20dp" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/doubleAmount"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/positive_btn" /> -->
+			</LinearLayout>
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+			    
+			
+            <Button
+                android:id="@+id/TipcontinueBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chaal_btn"
+                android:text="Tip" />
+
+            <Button
+                android:id="@+id/TipCancleBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_15dp"
+                android:background="@drawable/pack_btn"
+                android:text="Cancle" />
+        	</LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
